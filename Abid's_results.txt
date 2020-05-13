@@ -1,0 +1,28 @@
+### 3 lstm layer; 10 epoch, hidden size = 512, embed size = 512, loss = 1.78 ###
+
+# living_room.jpg
+<<start>> a man is standing in a room with a bunch of luggage . <<end>>
+
+# soccer.jpg
+<<start>> a group of young boys playing soccer on a field . <<end>>
+
+# dining_table.jpg
+<<start>> a couple of glasses of wine sitting on top of a table . <<end>>
+
+# soccerfans1.jpg
+<<start>> a group of people standing in front of a fire hydrant . <<end>>
+
+# soccerfans2.jpg
+<<start>> a man is jumping in the air with a skateboard . <<end>>
+
+# street1.jpeg
+<<start>> a car driving down a road with a car driving down it . <<end>>
+
+# carpedest.jpeg
+<<start>> a traffic light on a street with a car parked on the street . <<end>>
+
+# classroom.jpg
+<<start>> a room with a lot of furniture and a tv <<end>>
+
+# baggage_claim.jpeg
+<<start>> a group of people standing around a luggage carousel . <<end>>
