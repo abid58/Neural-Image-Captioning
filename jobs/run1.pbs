@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -l nodes=02:ppn=16:xk
+#PBS -l walltime=12:00:00
+#PBS -N trainbleu
+#PBS -e trainbleu.err
+#PBS -o trainbleu.out
+#PBS -m bea
+#PBS -M ahossa5@illinois.edu
+
+cd /u/eot/abidh/scratch/498JS_ABID/finalproject
+
+. /opt/modules/default/init/bash
+
+module load python/2.0.1
+
+module load cudatoolkit
+
+aprun -n 1 -N 1 python model_scores.py --eval='train'
