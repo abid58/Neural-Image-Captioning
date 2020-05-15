@@ -27,15 +27,19 @@ This file imports get_image_name and bleu_4(), bleu_3(), bleu_2(), and bleu_1() 
 
 
 
-## How to run 
+## How to run: 
 
-
-
-
-
+#### run 'sh download_data.sh'
+#### copy 'vocab.pkl' in 'data' folder: 
+      cp ./vocab.pkl ./data/
+#### Image resizing: 
+      python resize.py
+#### Training: 
+      python train.py
+#### generating example caption: 
+      python caption_generator.py --image='test_images/example.jpg'
 #### testing BLEU-1,2,3,4
-python model_scores.py --eval='eval'
-
+      python model_scores.py --eval='eval'
 #### training BLEU-1,2,3,4
-python model_scores.py --eval='train'
+      python model_scores.py --eval='train'
 
