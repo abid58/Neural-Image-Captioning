@@ -1,7 +1,7 @@
 ## This doc explains the functionality of each Python file.
 
 #### 1. data_loader.py:
-contains data loader for coco dataset. This file is called during training to load data as coco batch.
+This file contains data loader for coco dataset. This file is called during training to load data as coco batch.
 
 #### 2. resize.py:
 This file is resize all training images in ./data/train2014 to (256, 256) and save it to ./data/resized2014/. We resize all images, so we can have consistent inputs.
@@ -26,8 +26,12 @@ This file imports get_image_name and bleu_4(), bleu_3(), bleu_2(), and bleu_1() 
 
 
 
-
 ## How to run: 
+
+ ### Requirements:
+      python/2.0.1
+      cudatoolkit
+      pytorch (compatible version with python 2.0.1) 
 
 #### run 'sh download_data.sh'
 #### copy 'vocab.pkl' in 'data' folder: 
@@ -42,4 +46,5 @@ This file imports get_image_name and bleu_4(), bleu_3(), bleu_2(), and bleu_1() 
       python model_scores.py --eval='eval'
 #### training BLEU-1,2,3,4
       python model_scores.py --eval='train'
-
+ 
+ 
